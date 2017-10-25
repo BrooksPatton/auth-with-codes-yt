@@ -13,6 +13,16 @@ router.post('/create', (req, res, next) => {
 		.catch(err => res.status(500).send(err));
 });
 
+router.post('/login', (req, res, next) => {
+	userDB.getByCode(req.body.code)
+		.then(user => {
+			if(!user) return res.redirect('/');
+
+			res.redirect(`/dashboard?code=${user.code}`);
+		})
+		.catch(err => res.status(500).send(err));
+});
+
 function generateCode() {
 	const alphaNum = [
 		'1',
