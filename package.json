@@ -1,0 +1,23 @@
+{
+  "name": "auth-with-codes",
+  "version": "1.0.0",
+  "description": "Breakout on building a simple web app with code based auth",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrooksPatton/auth-with-codes-yt.git"
+  },
+  "author": "Brooks Patton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BrooksPatton/auth-with-codes-yt/issues"
+  },
+  "homepage": "https://github.com/BrooksPatton/auth-with-codes-yt#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "hbs": "^4.0.1"
+  }
+}
