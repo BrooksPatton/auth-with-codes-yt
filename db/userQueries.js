@@ -5,6 +5,11 @@ function insert(user) {
 		.then(arr => arr[0].code)
 }
 
+function getByCode(code) {
+	return db('user').select().where('code', code).first();
+}
+
 module.exports = {
-	insert
+	insert,
+	getByCode
 }
